@@ -1,0 +1,43 @@
+body {
+    display: grid;
+    grid-template:
+        "header header header header" 10em
+        "hero   hero   hero   hero"   30vh
+        "nav    nav    nav    nav"    5em
+        ".      card   card   side"   auto
+        "footer footer footer footer" 10em
+        / 1fr minmax(30em, 5fr) minmax(15em, 2fr) 1fr;
+    grid-column-gap: 1.5em;
+}
+
+header,
+footer {
+    background: black;
+    color: yellow;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+aside {
+    grid-area: side;
+}
+
+.container {
+    grid-area: card;
+}
+
+.nav-bar {
+    grid-area: nav;
+    display: inline;
+}
+
