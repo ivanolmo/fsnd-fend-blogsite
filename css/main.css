@@ -6,7 +6,7 @@ body {
         "nav    nav    nav    nav"    auto
         ".      card   side   ."   auto
         "footer footer footer footer" 5em
-        / 1fr minmax(30em, 5fr) minmax(15em, 2fr) 1fr;
+        / 1fr minmax(30em, 5fr) minmax(10em, 2fr) 1fr;
     grid-column-gap: 1.5em;
     font-size: 24px;
 }
@@ -14,26 +14,28 @@ body {
 header,
 footer {
     display: flex;
-    background: linear-gradient(to right, white, black);
-    justify-content: left;
-    /*align-items: center;*/
+    background: linear-gradient(45deg, black, white, black);
+    /*justify-content: left;*/
 }
 
 header {
     grid-area: header;
     flex-direction: column;
     align-items: center;
-    justify-content: left;
+    /*justify-content: left;*/
 }
 
 footer {
     grid-area: footer;
+    flex-direction: column;
+    align-items: center;
 }
 
 aside {
     grid-area: side;
     background: gray;
     padding: 1em;
+    margin: 16px;
 }
 
 .container {
