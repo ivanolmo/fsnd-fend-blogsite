@@ -1,6 +1,6 @@
-@import "./card.css";
-@import "./nav.css";
-@import "./layout.css";
+@import "card.css";
+@import "nav.css";
+@import "post.css";
 
 body {
     display: grid;
@@ -13,6 +13,7 @@ body {
         / 1fr minmax(30em, 5fr) minmax(10em, 2fr) 1fr;
     grid-column-gap: 1.5em;
     font-size: 24px;
+    background-color: #ecf0f1;
 }
 
 header,
@@ -45,7 +46,10 @@ aside {
 .hero {
     grid-area: hero;
     background-image: url("../img/hero-image.jpg");
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #464646;
 }
 
 .header-title,
