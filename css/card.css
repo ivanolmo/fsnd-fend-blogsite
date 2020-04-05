@@ -1,0 +1,28 @@
+.card {
+    display: grid;
+    grid-template:
+            "img title" min-content
+            "img content" auto / 2fr 4.5fr;
+    grid-column-gap: 1.5em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    background: white;
+    border: 1px solid black;
+    padding: 0.5em;
+    margin: 16px;
+}
+
+.card-title {
+    grid-area: title;
+    margin: 0;
+    font-weight: 300;
+}
+
+.card-image {
+    grid-area: img;
+    max-width: 100%;
+}
+
+.card-content {
+    grid-area: content;
+    font-size: 0.75em;
+}
