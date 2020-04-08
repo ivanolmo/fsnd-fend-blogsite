@@ -4,11 +4,13 @@
             "img title" min-content
             "img content" auto / 2fr 4.5fr;
     grid-column-gap: 1.5em;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
-    background: white;
-    border: 1px solid black;
+    box-shadow: 0 0 0.5em #d9d9d9;
+    /*background: #dfe6e9;*/
+    background: #393f4d;
+    /*border: 1px solid black;*/
     padding: 0.5em;
     margin: 16px;
+    border-radius: 15px 50px;
 }
 
 .card-title {
@@ -20,9 +22,22 @@
 .card-image {
     grid-area: img;
     max-width: 100%;
+    border-radius: 15px 50px 15px 50px;
 }
 
 .card-content {
     grid-area: content;
     font-size: 0.75em;
+}
+
+.card a {
+    text-decoration: none;
+    /*background-color: #feda6a;*/
+    color: #feda6a;
+    padding: 0.25em;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background: #1d1e22;
 }

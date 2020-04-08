@@ -1,27 +1,28 @@
 .nav {
     grid-area: nav;
     overflow: hidden;
-    background-color: #e9e9e9;
+    background-color: #feda6a;
 }
 
 .nav a {
     float: left;
     display: block;
-    color: black;
+    color: #1d1e22;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    letter-spacing: 2px;
 }
 
 .nav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #393f4d;
+    color: #feda6a;
 }
 
 .nav a.active {
     background-color: #2196F3;
-    color: white;
+    color: #d9d9d9;
 }
 
 /* search box */
