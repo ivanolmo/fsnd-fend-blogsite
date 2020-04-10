@@ -1,16 +1,15 @@
 .card {
     display: grid;
     grid-template:
-            "img title" min-content
-            "img content" auto / 2fr 4.5fr;
-    grid-column-gap: 1.5em;
+        "title" min-content
+        "content" auto
+        / 100%;
     box-shadow: 0 0 0.5em #d9d9d9;
-    /*background: #dfe6e9;*/
     background: #393f4d;
-    /*border: 1px solid black;*/
     padding: 0.5em;
     margin: 16px;
     border-radius: 15px 50px;
+    color: #d9d9d9;
 }
 
 .card-title {
@@ -21,8 +20,12 @@
 
 .card-image {
     grid-area: img;
-    max-width: 100%;
-    border-radius: 15px 50px 15px 50px;
+    background-image: url("../img/card-image-small.jpg");
+    height: auto;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .card-content {
@@ -32,7 +35,6 @@
 
 .card a {
     text-decoration: none;
-    /*background-color: #feda6a;*/
     color: #feda6a;
     padding: 0.25em;
     border-radius: 5px;
@@ -40,4 +42,53 @@
 
 .card a:hover {
     background: #1d1e22;
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .card {
+        display: grid;
+        grid-template:
+                ".   ." min-content
+                ".   title" auto
+                "img content" auto
+                "img content" auto
+            / 2fr 4.5fr;
+        grid-column-gap: 1em;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1079px) {
+    .card {
+        display: grid;
+        grid-template:
+            ".   ." min-content
+            ".   title" auto
+            "img content" auto
+            "img content" auto
+            / 1.5fr 5fr;
+        grid-column-gap: 1.5em;
+        box-shadow: 0 0 0.5em #d9d9d9;
+        background: #393f4d;
+        padding: 0.5em;
+        margin: 16px;
+        border-radius: 15px 50px;
+        color: #d9d9d9;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .card {
+        display: grid;
+        grid-template:
+            "img title" min-content
+            "img content" auto
+            / 1.5fr 4.5fr;
+        grid-column-gap: 1.5em;
+        box-shadow: 0 0 0.5em #d9d9d9;
+        background: #393f4d;
+        padding: 0.5em;
+        margin: 16px;
+        border-radius: 15px 50px;
+        color: #d9d9d9;
+    }
 }
