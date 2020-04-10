@@ -3,6 +3,7 @@
 @import "post.css";
 
 * {
+    font-family: 'Oswald', sans-serif;
     font-size: 24px;
     color: #d9d9d9;
 }
@@ -20,6 +21,13 @@ body {
     width: 100%;
     min-width: 375px;
     margin: 0 auto;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 500;
 }
 
 header,
@@ -39,6 +47,7 @@ header {
 footer {
     grid-area: footer;
     padding: 1em;
+    letter-spacing: 0;
 }
 
 aside {

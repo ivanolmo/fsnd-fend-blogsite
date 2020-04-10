@@ -15,7 +15,7 @@
 .card-title {
     grid-area: title;
     margin: 0;
-    font-weight: 300;
+    font-size: 1.25rem;
 }
 
 .card-image {
@@ -33,15 +33,18 @@
     font-size: 0.75em;
 }
 
-.card a {
+.btn-1 {
+    background-color: #1d1e22;
     text-decoration: none;
-    color: #feda6a;
-    padding: 0.25em;
-    border-radius: 5px;
+    padding: 4px;
+    margin-left: 0.5em;
+    transition-duration: 0.4s;
+    border-radius: 5px 15px 5px 15px;
 }
 
-.card a:hover {
-    background: #1d1e22;
+.btn-1:hover {
+    background-color: #feda6a;
+    color: #1d1e22;
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
@@ -54,6 +57,10 @@
                 "img content" auto
             / 2fr 4.5fr;
         grid-column-gap: 1em;
+    }
+
+    .card a {
+        margin-left: 0;
     }
 }
 
@@ -74,6 +81,10 @@
         border-radius: 15px 50px;
         color: #d9d9d9;
     }
+
+    .card a {
+        margin-left: 0;
+    }
 }
 
 @media screen and (min-width: 1080px) {
@@ -90,5 +101,9 @@
         margin: 16px;
         border-radius: 15px 50px;
         color: #d9d9d9;
+    }
+
+    .card a {
+        margin-left: 0;
     }
 }
