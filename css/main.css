@@ -114,10 +114,19 @@ aside {
     border-radius: 5px 15px 5px 15px;
 }
 
+.btn-2 {
+    width: min-content;
+}
+
 .btn-1:hover,
 .btn-2:hover {
     background-color: #feda6a;
     color: #1d1e22;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
 }
 
 #subscribe-email,
