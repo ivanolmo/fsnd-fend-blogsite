@@ -120,6 +120,16 @@ aside {
     color: #1d1e22;
 }
 
+#subscribe-email,
+#subscribe-name {
+    color: #1d1e22;
+    margin: 0;
+}
+
+#subscribe-email {
+    margin-bottom: 24px;
+}
+
 i.fab,
 i.fas {
     line-height: 20px;
