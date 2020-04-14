@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FEND Blog</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/26eb599f43.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-title">Front End Design Blog</h1>
+        <p class="header-subtitle">Learning front end development</p>
+    </header>
+
+    <div class="hero"></div>
+
+    <div class="nav">
+        <a class="active home" href="index.html">Home</a>
+        <a href="archive.html">Archive</a>
+        <a href="subscribe.html">Subscribe</a>
+        <a href="contact.html">Contact</a>
+        <input type="text" placeholder="Search...">
+    </div>
+
+    <main class="container">
+        <div class="card">
+            <div class="card-image"></div>
+            <h2 class="card-title">Post 1 Title</h2>
+            <div class="card-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros justo, tempus eget tempus vitae, rutrum sed tortor. Donec viverra dui a arcu fermentum, ac gravida turpis volutpat. Sed euismod tellus at auctor sollicitudin.</p>
+                <a class="btn-1" href="blog-post-1.html">Read More...</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image"></div>
+            <h2 class="card-title">Post 2 Title</h2>
+            <div class="card-content">
+                <p>In consequat cursus feugiat. Curabitur mauris nulla, dignissim sit amet finibus nec, fermentum in sem. Sed accumsan magna consectetur consectetur dictum.</p>
+                <a class="btn-1" href="#">Read More...</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image"></div>
+            <h2 class="card-title">Post 3 Title</h2>
+            <div class="card-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper lacinia tempus. Donec ex dolor, blandit sed nunc vitae, bibendum tristique ex. Nulla eu gravida dolor. Nunc imperdiet tristique sodales.</p>
+                <a class="btn-1" href="#">Read More...</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image"></div>
+            <h2 class="card-title">Post 4 Title</h2>
+            <div class="card-content">
+                <p>In consequat cursus feugiat. Curabitur mauris nulla, dignissim sit amet finibus nec, fermentum in sem. Sed accumsan magna consectetur consectetur dictum.</p>
+                <a class="btn-1" href="#">Read More...</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image"></div>
+            <h2 class="card-title">Post 5 Title</h2>
+            <div class="card-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper lacinia tempus. Donec ex dolor, blandit sed nunc vitae, bibendum tristique ex. Nulla eu gravida dolor. Nunc imperdiet tristique sodales.</p>
+                <a class="btn-1" href="#">Read More...</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image"></div>
+            <h2 class="card-title">Post 6 Title</h2>
+            <div class="card-content">
+                <p>In consequat cursus feugiat. Curabitur mauris nulla, dignissim sit amet finibus nec, fermentum in sem. Sed accumsan magna consectetur consectetur dictum.</p>
+                <a class="btn-1" href="#">Read More...</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image"></div>
+            <h2 class="card-title">Post 7 Title</h2>
+            <div class="card-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper lacinia tempus. Donec ex dolor, blandit sed nunc vitae, bibendum tristique ex. Nulla eu gravida dolor. Nunc imperdiet tristique sodales.</p>
+                <a class="btn-1" href="#">Read More...</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image"></div>
+            <h2 class="card-title">Post 8 Title</h2>
+            <div class="card-content">
+                <p>In consequat cursus feugiat. Curabitur mauris nulla, dignissim sit amet finibus nec, fermentum in sem. Sed accumsan magna consectetur consectetur dictum.</p>
+                <a class="btn-1" href="#">Read More...</a>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <h2 class="sidebar-title">About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper lacinia tempus. Donec ex dolor, blandit sed nunc vitae, bibendum tristique ex. Nulla eu gravida dolor. Nunc imperdiet tristique sodales.</p>
+        <p>Aenean porta diam libero, ac malesuada diam pellentesque a. Mauris ut elit urna. Donec cursus nulla ac quam elementum sagittis. Suspendisse potenti. Nunc ac magna faucibus, porttitor lectus in, tincidunt ante. Integer at eros nunc.</p>
+    </aside>
+    <footer>
+        <h3 class="footer-title">Ivan Olmo 2020</h3>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fas fa-envelope-square"></i></a>
+    </footer>
+</body>
+</html>
