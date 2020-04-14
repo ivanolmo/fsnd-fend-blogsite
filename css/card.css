@@ -2,7 +2,7 @@
     display: grid;
     grid-template:
         "title" min-content
-        "content" auto
+        "text" auto
         / 100%;
     box-shadow: 0 0 0.5em #d9d9d9;
     background: #393f4d;
@@ -29,22 +29,8 @@
 }
 
 .card-content {
-    grid-area: content;
+    grid-area: text;
     font-size: 0.75em;
-}
-
-.btn-1 {
-    background-color: #1d1e22;
-    text-decoration: none;
-    padding: 4px;
-    margin-left: 0.5em;
-    transition-duration: 0.4s;
-    border-radius: 5px 15px 5px 15px;
-}
-
-.btn-1:hover {
-    background-color: #feda6a;
-    color: #1d1e22;
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
@@ -53,8 +39,8 @@
         grid-template:
                 ".   ." min-content
                 ".   title" auto
-                "img content" auto
-                "img content" auto
+                "img text" auto
+                "img text" auto
             / 2fr 4.5fr;
         grid-column-gap: 1em;
     }
@@ -70,8 +56,8 @@
         grid-template:
             ".   ." min-content
             ".   title" auto
-            "img content" auto
-            "img content" auto
+            "img text" auto
+            "img text" auto
             / 1.5fr 5fr;
         grid-column-gap: 1.5em;
         box-shadow: 0 0 0.5em #d9d9d9;
@@ -92,7 +78,7 @@
         display: grid;
         grid-template:
             "img title" min-content
-            "img content" auto
+            "img text" auto
             / 1.5fr 4.5fr;
         grid-column-gap: 1.5em;
         box-shadow: 0 0 0.5em #d9d9d9;

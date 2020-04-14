@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Post 1 Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/26eb599f43.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -20,16 +21,64 @@
         <a href="archive.html">Archive</a>
         <a href="subscribe.html">Subscribe</a>
         <a href="contact.html">Contact</a>
-        <input type="text" placeholder="Search...">
+        <label for="search-bar"></label>
+        <input type="text" placeholder="Search..." id="search-bar">
     </div>
-    <div class="blog-post-placeholder">
-        <p>Placeholder for blog post page.</p>
-    </div>
+    <main class="post-container">
+        <div class="post-image"></div>
+        <div class="author-image">
+            <img src="img/author-small.jpg" alt="author image">
+        </div>
+        <span class="author-name">By: Lagertha Lothbrok</span>
+        <div class="author-social">
+            <span class="social-share">Share:</span>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fas fa-envelope-square"></i></a>
+        </div>
+        <div class="post-heading">
+            <h2>Tech Blog Post Title</h2>
+        </div>
+        <div class="post-content">
+            <p class="first-para">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros justo, tempus eget tempus vitae, rutrum sed tortor.
+                Donec viverra dui a arcu fermentum, ac gravida turpis volutpat. Sed euismod tellus at auctor sollicitudin. Suspendisse
+                congue, nunc id feugiat molestie, nisl justo ornare mi, non rhoncus mi nunc sit amet orci. In in sapien consequat,
+                tincidunt lorem ullamcorper, luctus ipsum. Vestibulum placerat purus vitae metus congue ullamcorper eget a est. Donec
+                et euismod magna. <strong>Vestibulum ut tristique odio.</strong> Nulla ac est sit amet mi mollis pellentesque tincidunt vitae turpis.
+                Praesent pellentesque convallis maximus.
+            </p>
+            <p>
+                Aliquam quis commodo felis. Suspendisse condimentum mattis mauris, ac fermentum est mattis vitae. In hac habitasse
+                platea dictumst. Maecenas eget ex velit. <em>Donec a gravida lorem, et lobortis purus.</em> Ut ac lobortis justo. Nam porttitor
+                nisl nisi, non posuere dolor sagittis ut. Etiam ac velit quam. Cras a neque non felis porta feugiat.
+            </p>
+            <p>
+                Donec placerat tincidunt nisl, nec pharetra mauris tincidunt eu. Vivamus pharetra bibendum iaculis. Donec ac facilisis
+                mauris. Nullam rhoncus tellus in nisl elementum porta. Fusce lobortis ipsum et ipsum euismod, ut euismod augue luctus.
+                In congue, ex dignissim convallis consectetur, nulla lorem lacinia est, eu eleifend turpis sapien quis velit. Phasellus
+                cursus dolor eget felis tempus fermentum. Cras dapibus venenatis ante vitae convallis. Nullam nisi elit, egestas id
+                lectus vitae, facilisis luctus quam. Integer posuere, risus posuere accumsan elementum, purus felis lacinia lorem, eget
+                elementum mi ex vel neque. <u>Nam viverra justo odio, ac vehicula ipsum dapibus eget.</u> Mauris tempus, leo a faucibus
+                imperdiet, risus est sagittis enim, nec pretium urna ipsum in nulla.
+            </p>
+        </div>
+    </main>
+    <aside>
+        <h2 class="sidebar-title">About The Author</h2>
+        <p>
+            Lagertha Lothbrok is the Assistant Dean of Students at the Chicago Institute of Technology. She has a passion for web development,
+            and has been teaching there for 27 years. On her off time, she loves working on side projects and bonding with Loki, her 3 year old
+            miniature Poodle.
+        </p>
+    </aside>
     <footer>
         <h3 class="footer-title">Ivan Olmo 2020</h3>
         <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
         <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
         <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fas fa-envelope-square"></i></a>
     </footer>
 </body>
 </html>

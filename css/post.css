@@ -1,0 +1,91 @@
+.post-container {
+    display: grid;
+    grid-template:
+        "post-image post-image post-image post-image" 30vh
+        "author-image . author-name author-name" auto
+        "author-image . author-social author-social" auto
+        "post-heading post-heading post-heading post-heading" auto
+        "post-content post-content post-content post-content" auto
+        / 1fr 1fr 1fr 1fr;
+}
+
+p {
+    font-size: 22px;
+}
+
+.post-image {
+    grid-area: post-image;
+    background: url("../img/post-image-small.jpg") no-repeat center center;
+    width: 100%;
+    background-size: cover;
+}
+
+.author-image {
+    grid-area: author-image;
+    margin: 16px 0 0 16px;
+}
+
+.author-image img {
+    border-radius: 50%;
+}
+
+.author-name {
+    grid-area: author-name;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.social-share {
+    display: inline;
+    font-size: 18px;
+}
+
+.author-social {
+    grid-area: author-social;
+    height: 2em;
+    display: inline;
+}
+
+.post-heading {
+    grid-area: post-heading;
+    margin: 24px 16px 0 12px;
+    background-color: #feda6a;
+    border-radius: 10px;
+}
+
+.post-heading h2 {
+    margin-left: 0.5em;
+    color: #1d1e22;
+}
+
+.post-content {
+    grid-area: post-content;
+    line-height: 1.6;
+    margin: 0 16px 0 16px;
+}
+
+.first-para::first-letter {
+    color: #feda6a;
+    float: left;
+    font-size: 60px;
+    padding: 15px 5px 0 0;
+}
+
+@media screen and (min-width: 769px) {
+    .post-container {
+        display: grid;
+        grid-template:
+            "post-image post-image post-image post-image post-image post-image" 30vh
+            "author-image . . . author-name author-name" auto
+            "author-image . . . author-social author-social" auto
+            "post-heading post-heading post-heading post-heading post-heading post-heading" 5em
+            "post-content post-content post-content post-content post-content post-content" auto
+            / 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .post-image {
+        margin: 16px;
+        width: 96%;
+        border-radius: 15px;
+    }
+}
